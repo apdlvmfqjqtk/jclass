@@ -1,4 +1,4 @@
-package j0116;
+   package j0116;
 
 import java.util.Scanner;
 
