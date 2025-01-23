@@ -105,7 +105,7 @@ public class Ja0116_05 {
 				}
 				
 				if(temp == 0) {
-					System.out.println("검색힌 학생을 찾지 못했습니다.");
+					System.out.println("검색한 학생을 찾지 못했습니다.");
 				}else {
 					System.out.printf("%s 학생 성적 수정. \n", search);
 					System.out.println("1. 국어 점수 수정");
