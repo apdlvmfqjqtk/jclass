@@ -42,18 +42,22 @@ public class Stu_main {
 				stuDeck.infoUp();
 				break;
 			case 4: // 성적 삭제
-				
+				stuDeck.FileDelete();
 				break;
 			case 5: // 성적 검색
 				stuDeck.nameSrc();
 				break;
 			case 6: // 성적 정렬
+				stuDeck.gradeLineUp();
 				break;
 			case 7: // 이름 정렬
+				stuDeck.nameLineUp();
 				break;
 			case 8: // 등수처리
+				stuDeck.rankUp();
 				break;
 			case 9: // 파일저장
+				stuDeck.fileSave();
 				break;
 			case 0: // 프로그램 종료
 				System.out.println("[ 프로그램 종료 ]");

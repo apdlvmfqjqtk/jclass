@@ -1,6 +1,6 @@
 package j0124;
 
-public class Stu extends Object {
+public class Stu {
 	static int count = 0;
 	private int no;
 	private String name;
@@ -13,7 +13,15 @@ public class Stu extends Object {
 	
 	{this.no = ++count;} // 생성자 호출되면 얘부터실행
 	Stu(){super();}
-	Stu(int no, String name, int kor, int eng, int math){
+	Stu(String name, int kor, int eng, int math){
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.total = kor+eng+math;
+		this.avg = total/3.0;
+	}
+	Stu(int no,String name, int kor, int eng, int math, int total, double avg, int rank){
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -21,6 +29,7 @@ public class Stu extends Object {
 		this.math = math;
 		this.total = kor+eng+math;
 		this.avg = total/3.0;
+		this.rank = rank;
 	}
 	
 	public int getNo() {
